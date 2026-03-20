@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #ffffda;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  background-color: white;
+  height: 80px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px, 1px, 2px, 0px rgba(0, 0, 0, 0.6);
+}
+header > img {
+  width: 50px;
+
+}
+
+header > h1 {
+  font-weight: 400;
+}
+main {
+  padding: 50px 30px 10px;
+}
+.add-ingredient-form {
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   gap: 12px;
+   height: 38px;
+}
+
+.add-ingredient-form > input {
+
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  padding: 9px 13px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 150px;
+  max-width: 400px;
+}
+
+/* the flex grow help to extend the box  */
+
+.add-ingredient-form > button {
+  font-family: Inter, sans-serif;
+  border-radius: 6px;
+  border: none;
+  background-color: #141413;
+  color: rgb(226, 228, 223);
+  width: 150px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+/* The before sudo selector help place an object in front of an object  */
+add-ingredient-form > button::before{
+ content: "+";
+  margin-right: 5px;
+}
